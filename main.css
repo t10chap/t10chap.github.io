@@ -1,0 +1,32 @@
+body {
+    background-color: #00ae9e;
+}
+
+img {
+    max-width: 90%;
+    max-height: 100%;
+}
+
+.logo {
+    letter-spacing: 01px;
+    margin: 16px 0 16px 16px;
+    font-weight: 300;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.mainWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.mainWrap div {
+    height: 100%;
+    width: 100%;
+}
+
+.other {
+    margin-top: -10px;
+}
