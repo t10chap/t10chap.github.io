@@ -1,33 +1,171 @@
-body {
-    background-color: #00ae9e;
+html {
+    scroll-behavior: smooth;
 }
 
-img {
-    max-width: 90%;
-    max-height: 100%;
+body {
+    background-color: #00ae9e !important;
+}
+
+header {
+    margin: 16px 0 0 16px;
+    text-align: center;
+}
+
+header a {
+    font-size: 44px;
+    margin-bottom: 40px;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+header h1 {
+    text-align: left;
+}
+
+.description {
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
 }
 
 .logo {
-    letter-spacing: 01px;
-    margin: 16px 0 16px 16px;
-    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     font-size: 60px;
     color: rgb(255, 255, 255);
 }
 
-.mainWrap {
+.navWrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    background-color: #78f7ea;
+    height: 50px;
 }
 
-.mainWrap div {
+.navWrap img {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.service {
     height: 100%;
     width: 100%;
+    border-right: 2px solid black;
 }
 
-.other {
-    font-size: 20px;
-    margin-top: -10px;
+.service:last-child {
+    border: none;
+}
+
+.other  {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: left;
+    line-height: 3px;
+    max-height: 62px;
+}
+
+.other h1 {
+    font-weight: 600;
+    font-size: 1.9vw;
+}
+
+.other h2 {
+    font-size: 1.9vw;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.mainWrap {
+    background-color: white;
+    text-align: center;
+}
+
+.mainWrap p{
+    margin-top: 50px;
+}
+
+#pas {
+    padding-top: 60px !important;
+}
+
+#pks, #oService, #pas, #pfs {
+    padding: 30px 50px;
+}
+
+#pas, #pfs {
+    background-color: #008774;
+    color: white;
+}
+
+.wrap {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    height: 260px;
+}
+
+.wrap img {
+    height: 260px;  
+    width: 390px !important;
+}
+
+footer {
+    text-align: center;
+    background-color: #00253E;
+    color: white;
+    padding-top: 60px;
+}
+
+footer h1 {
+    font-weight: 500;
+    color: #008774;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.team:last-child {
+    padding-bottom: 20px;
+}
+
+.member {
+    width: 40%;
+    margin: 50px auto 0;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+
+
+.member h3, .member h5 {
+    color: #00a58f;
+    font-weight: 300;
+}
+
+.service:hover {
+    background-color: #86c775;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+@media only screen and (min-width: 1100px) {
+    .service img{
+        max-height: 50px;
+        max-width: 237px;
+    }
+    .other h1 {
+        font-size: 24px;
+    }
+    .other h2 {
+        font-size: 22px;
+    }
 }
